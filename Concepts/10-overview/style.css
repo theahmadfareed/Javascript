@@ -1,0 +1,65 @@
+#navbar {
+  position: sticky;
+  top: 0;
+}
+
+button {
+  border: 3px solid black;
+  transition: all 1s ease;
+  background: red;
+}
+
+button:hover {
+  color: deepskyblue;
+}
+
+#b {
+  margin-top: 5px;
+}
+
+#grad {
+  margin-top: 5px;
+  border: 5px solid black;
+}
+
+#las {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+#las > div {
+  border: 5px solid;
+  margin-top: 10px;
+  cursor: pointer;
+
+  box-shadow: 0 -5px 3px -3px rgb(0, 0, 0), 0 5px 3px -3px rgb(0, 0, 0);
+}
+
+#las > div:hover {
+
+  transition: all 0.1s ease;
+
+  transform: scale(1.1);
+}
+
+#form {
+  margin-top: 5px;
+}
+
+#html {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.titleFont {
+  font-family: "Times New Roman";
+}
+
+.titleBold {
+  font-weight: bold;
+}
