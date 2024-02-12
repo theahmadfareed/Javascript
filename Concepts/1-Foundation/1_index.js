@@ -8,13 +8,13 @@ JS Engine(V8)
   // Stack Overflow => when call stack size exceeded, recursion is the common way to do stack overflow
   Memory Heap [] => place to store and write information
   // Garbage Collection => Mark-Sweep 
-  // Memory Leak => when memory heap size exceeded, global variables, event listners, setInterval()
+  // Memory Leak => when memory heap size exceeded, global variables, event listeners, setInterval()
   
   Parser => Lexical Analysis (tokens)
   AST => Abstract Syntax Tree
   Interpreter / Ignition => read the code, run the code
   Bytecode => interpreter produces bytecode (low level code but not as low level as machine code)
-  Profiler / Moniter => tells how we can optimize the code
+  Profiler / Monitor => tells how we can optimize the code
   JIT Compiler / Turbo Fan => read the code, understands it, convert the code into another language (machine code), produces optimized code
   Optimized Code => mixture of byte code and machine code
   // Optimized Code => don't use these things in your code [eval(), arguments, for in, with, delete, hidden classes, inline caching]

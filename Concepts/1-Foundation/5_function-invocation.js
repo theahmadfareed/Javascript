@@ -3,7 +3,7 @@ console.log("Function Invocation")
 /*
 // this, arguments
 "this" => is the object that the function is a property of, gives methods access to their object, execute same code for multiple objects
-"arguments" => on each execution context, we get arguments object
+"arguments" => on each execution context, we get arguments object which contains the arguments passed to a function
 Variable Environment = variables created inside each execution context are stored in variable environment.
 */
 

@@ -1,7 +1,7 @@
 // Functions are first class citizens in js
 console.log("FCC");
 
-//1 functions can be assigned to variables or object properties
+//1 function can be assigned to variables or object properties
 var stuff = function () {};
 
 
@@ -14,7 +14,7 @@ a(function () {
 });
 
 
-//3 Functions can be retured as values from other functions
+//3 Functions can be returned as values from other functions
 function b() {
   return function c() {
     console.log("Bye!");

@@ -6,8 +6,8 @@ String('Hello World').
 Number(5, 5.5, 123e5, 123e-5).
 Bigint("123456789012345678901234567890").
 Boolean (true, false).
-Undefined(absance of defination).
-Null(absance of value).
+Undefined(absence of definition).
+Null(absence of value).
 Symbol('Ali').
 */
 

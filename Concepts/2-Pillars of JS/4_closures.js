@@ -1,6 +1,6 @@
 // 1st Pillar of Javascript
 console.log('Closures')
-// Closures allow a function to access variables from an enclosing scope or environment, even after it leaves the scope in which it was decalred.
+// Closures allow a function to access variables from an enclosing scope or environment, even after it leaves the scope in which it was declared.
 
 function a() {
     let grandpa = 'grandpa';

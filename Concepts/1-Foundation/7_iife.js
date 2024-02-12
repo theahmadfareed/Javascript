@@ -16,3 +16,22 @@ var script = (function () {
 })();
 script.a();
 script.b();
+
+
+// Named IIFE
+(function chai(){
+  // named IIFE
+  console.log(`DB CONNECTED`);
+})();
+
+// Normal IIFE
+( () => {
+  console.log(`DB CONNECTED TWO ${name}`);
+} )();
+
+
+( (name) => {
+  console.log(`DB CONNECTED TWO ${name}`);
+} )('hitesh')
+
+

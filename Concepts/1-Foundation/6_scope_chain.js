@@ -1,7 +1,7 @@
-// Each context is linked to its outside context (which gives access to the varibales that are in our parent environment) and this outside context depends on where the function sits lexically.
+// Each context is linked to its outside context (which gives access to the variables that are in our parent environment) and this outside context depends on where the function sits lexically.
 /*
-Context = It is an object based thing, what is the value of "this" keyword, which is a reference to the object that owns that current executing code, context is determined by how the function is invocked with the value of this keyword
-Scope = It is a function based thing, it tells us about what is in the variable environment, visibility of the varibales.
+Context = It is an object based thing, what is the value of "this" keyword, which is a reference to the object that owns that current executing code, context is determined by how the function is invoked with the value of this keyword
+Scope = It is a function based thing, it tells us about what is in the variable environment, visibility of the variables.
 */
 "use strict";
 console.log("Scope Chain");
