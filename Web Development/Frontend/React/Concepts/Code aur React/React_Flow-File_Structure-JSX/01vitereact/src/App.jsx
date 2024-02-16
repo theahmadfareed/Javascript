@@ -6,6 +6,7 @@ import Chai from "./chai"
 function App() {
   const username = "chai aur code"
 
+  // {} = evaluated expression
   return (
     <>
       <Chai />
