@@ -21,6 +21,8 @@ function Navbar() {
         <NavLink to="/" className={`${styles.logo} ${styles.inActiveStyle}`}>
           CoinBounce
         </NavLink>
+
+
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -29,6 +31,7 @@ function Navbar() {
         >
           Home
         </NavLink>
+
         <NavLink
           to="/crypto"
           className={({ isActive }) =>
@@ -37,6 +40,7 @@ function Navbar() {
         >
           Crypto Currencies
         </NavLink>
+
         <NavLink
           to="/blogs"
           className={({ isActive }) =>
@@ -45,6 +49,7 @@ function Navbar() {
         >
           Blogs
         </NavLink>
+
         <NavLink
           to="/submit-blog"
           className={({ isActive }) =>

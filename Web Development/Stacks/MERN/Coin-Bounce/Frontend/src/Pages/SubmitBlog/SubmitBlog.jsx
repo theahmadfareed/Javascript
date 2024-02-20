@@ -11,18 +11,22 @@ function SubmitBlog() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [photo, setPhoto] = useState("");
+  const [photoName, setPhotoName] = useState("");
 
   const author = useSelector((state) => state.user._id);
 
   const getPhoto = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
+    // Access the file name
+    const fileName = file.name;
+    setPhotoName(fileName)
+    // console.log(fileName)
     reader.readAsDataURL(file);
     reader.onloadend = () => {
       setPhoto(reader.result);
     };
   };
-
   const submitHandler = async () => {
     const data = {
       author,
@@ -30,11 +34,18 @@ function SubmitBlog() {
       content,
       photo,
     };
+    // console.log(title)
+    // console.log(content)
+    // console.log(photoName)
 
-    const response = await submitBlog(data);
+    try {
+      const response = await submitBlog(data);
 
-    if (response.status === 201) {
-      navigate("/blogs");
+      if (response.status === 201) {
+        navigate("/blogs");
+      }
+    } catch (error) {
+      console.log(error)
     }
   };
 
@@ -66,7 +77,7 @@ function SubmitBlog() {
           onChange={getPhoto}
         />
         {photo !== "" ? (
-          <img alt="NoPhoto" src={photo} width={150} height={150} />
+          <img alt="NoPhoto" src={photo} width={50} height={50} />
         ) : (
           ""
         )}

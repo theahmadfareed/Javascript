@@ -48,17 +48,19 @@ export const getAllBlogs = async () => {
 
   try {
     response = await api.get("/blog/all");
-  } catch (error) {}
+  } catch (error) { }
 
   return response;
 };
 
 export const submitBlog = async (data) => {
   let response;
-
+  // console.log(data)
   try {
     response = await api.post("/blog", data);
+    console.log("Response Frontend: ", response)
   } catch (error) {
+    console.log(error)
     return error;
   }
 
@@ -148,6 +150,7 @@ api.interceptors.response.use(
 
         return api.request(originalReq);
       } catch (error) {
+        console.log(error);
         return error;
       }
     }

@@ -28,6 +28,7 @@ function Blog() {
     <div className={styles.blogsWrapper}>
       {blogs.map((blog) => (
         <div
+          key={blog._id}
           id={blog._id}
           className={styles.blog}
           onClick={() => navigate(`/blog/${blog._id}`)}
