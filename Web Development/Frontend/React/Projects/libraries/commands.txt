@@ -1,3 +1,6 @@
+==================================
+React.js
+
 # npm
 npm init react-app app-name
 
@@ -15,3 +18,35 @@ npm create vite@latest demo-app-vite-ts -- --template react-ts
 pnpm create vite pnpm-vite-react-js-app-name
 pnpm create vite demo-app-pnpm-js --template react
 pnpm create vite demo-app-pnpm-ts --template react-ts
+
+
+
+==================================
+Vue.js
+# npm
+npm create vite@latest npm-my-vue-app -- --template vue
+
+# pnpm
+pnpm create vite pnpm-my-vue-app --template vue
+
+
+
+
+==================================
+NEXT.js
+# npx
+npx create-next-app@latest
+
+
+
+
+==================================
+Angular
+ng new my-first-project
+ng serve
+
+
+
+
+==================================
+
